@@ -1,11 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>UHBooking</title>
 </head>
 <body>
-    <h1>Hello123</h1>
+
+<header>
+    <h1>UHBooking</h1>
+</header>
+
+<main>
+<nav>
+    <ul>
+        <li><a href="index.html">Головна сторінка</a></li>
+        <li><a href="#account">Власний кабінет</a></li>
+        <li><a href="#catalog">Каталог</a></li>
+    </ul>
+</nav>
+
+<section class="search-box">
+
+    <h2>Пошук готелів</h2>
+
+    <input type="text" placeholder="Введіть місце або назву готелю">
+
+    <select>
+        <option>Дата заїзду</option>
+        <option>1</option>
+        <option>2</option>
+    </select>
+
+    <select>
+        <option>Дата виїзду</option>
+        <option>1</option>
+        <option>2</option>
+    </select>
+
+    <input type="number" placeholder="Кількість місць у номері">
+    <button>ПОШУК</button>
+</section>
+
+<section class="popular-destinations">
+    <h2>Популярні напрямки</h2>
+    <div class="destination-grid">
+        <div class="destination">
+            <img src="./images/kyiv.jpg" alt="Київ">
+            <p>Київ<br>від UAH 500</p>
+        </div>
+        <div class="destination">
+            <img src="./images/lviv.jpg" alt="Львів">
+            <p>Львів<br>від UAH 490</p>
+        </div>
+        <div class="destination">
+            <img src="./images/odesa.jpg" alt="Одеса">
+            <p>Одеса<br>від UAH 400</p>
+        </div>
+        <div class="destination">
+            <img src="./images/dnipro.jpg" alt="Дніпро">
+            <p>Дніпро<br>від UAH 350</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact-info">
+    <h2>Безкоштовне бронювання по телефону</h2>
+    <p>+38 066 123-45-67</p>
+    <p>+38 050 50-50-50</p>
+</section>
+</main>
+
+<footer>
+    <p>© 2024 UHBooking. Всі права захищені.</p>
+</footer>
+
 </body>
 </html>
