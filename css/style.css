@@ -54,7 +54,7 @@ nav ul li a:hover
 .search-box 
 {
     background-color: hsl(81, 54%, 65%);
-    padding: 20px;
+    padding: 10px;
     width: 350px;
     margin: 30px auto;
     border-radius: 12px;
@@ -62,9 +62,10 @@ nav ul li a:hover
 
 .search-box input, .search-box select 
 {
-    width: 100%;
-    padding: 5px;
-    margin: 10px;
+    width: calc(100% - 3px);
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
 }
 
 .search-box button 
@@ -81,11 +82,6 @@ nav ul li a:hover
 {
     text-align: center;
     margin: 20px 0;
-}
-
-.popular-destinations h2 
-{
-    color: #6a6a6a;
 }
 
 .destination-grid 
@@ -119,17 +115,64 @@ nav ul li a:hover
     font-size: 14px;
 }
 
-.contact-info 
-{
-    background-color: #58a15c;
-    padding: 20px;
-    margin: 20px 0;
+.hotel-table {
+    margin: 20px auto;
+    width: 80%;
     text-align: center;
 }
 
-.contact-info p 
+
+.hotel-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.hotel-table th, .hotel-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.hotel-table th {
+    background-color: hsl(78, 100%, 36%);
+    color: white;
+}
+
+.hotel-table tr:hover {
+    background-color: hsl(81, 54%, 85%);
+}
+
+.feedback-form {
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.feedback-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.feedback-form input, .feedback-form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 2px solid hsl(78, 100%, 36%);
+}
+
+.feedback-form button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.contact-info 
 {
-    margin: 5px 0;
+    background-color: #58a15c;
+    color: white; 
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
 }
 
 footer 
