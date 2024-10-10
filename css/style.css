@@ -60,6 +60,10 @@ nav ul li a:hover
     border-radius: 12px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .search-box input, .search-box select 
 {
     width: calc(100% - 3px);
@@ -143,6 +147,10 @@ nav ul li a:hover
     background-color: hsl(81, 54%, 85%);
 }
 
+#name {
+    border: 2px solid hsl(209, 100%, 57%);
+}
+
 .feedback-form {
     width: 50%;
     margin: 20px auto;
@@ -173,6 +181,28 @@ nav ul li a:hover
     padding: 20px;
     margin: 20px 0;
     text-align: center;
+}
+
+h2 + p{
+    color: rgb(255, 230, 1);
+}
+
+h2 + p + p{
+    color: rgb(255, 230, 1);
+}
+
+a[href^="https"] {
+    color: rgb(57, 206, 252);
+}
+
+.contact-info a:visited {
+    color: rgb(57, 206, 252);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 footer 
